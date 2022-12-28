@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on win32)" generated="20221227 02:05:20.608" rpa="false" schemaversion="3">
+<suite id="s1" name="TC1" source="C:\Users\asgor\PycharmProjects\robot_framework\Day_1\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221227 02:05:21.083" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20221227 02:05:21.082" endtime="20221227 02:05:26.654"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221227 02:05:26.656" level="INFO">Clicking link 'xpath://a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20221227 02:05:26.655" endtime="20221227 02:05:28.075"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='Email']</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221227 02:05:28.076" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'xpath://input[@id='Email']'.</msg>
+<status status="PASS" starttime="20221227 02:05:28.076" endtime="20221227 02:05:28.284"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='Password']</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221227 02:05:28.286" level="INFO">Typing text 'Test@123' into text field 'xpath://input[@id='Password']'.</msg>
+<status status="PASS" starttime="20221227 02:05:28.285" endtime="20221227 02:05:28.432"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221227 02:05:28.434" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20221227 02:05:28.433" endtime="20221227 02:05:28.504"/>
+</kw>
+<kw name="c">
+<msg timestamp="20221227 02:05:28.508" level="FAIL">No keyword with name 'c' found.</msg>
+<status status="FAIL" starttime="20221227 02:05:28.507" endtime="20221227 02:05:28.508"/>
+</kw>
+<status status="FAIL" starttime="20221227 02:05:21.081" endtime="20221227 02:05:28.508">No keyword with name 'c' found.</status>
+</test>
+<status status="FAIL" starttime="20221227 02:05:20.612" endtime="20221227 02:05:28.511"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
